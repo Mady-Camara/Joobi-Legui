@@ -1,0 +1,41 @@
+#header {
+	justify-content: space-between;
+	align-items: center;
+  z-index: 5;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #6a99ec;
+  color: #6a99ec;
+}
+.logo {
+  width: auto;
+  height: 2rem;
+  border-radius: 13px;
+  border: 1px solid #000000;
+  margin-left: 15px;
+  cursor: pointer;
+ }
+
+ .menu {
+  width: auto;
+  height: 2rem;
+  border-radius: 13px;
+  border: 1px solid #000000;
+  background-color: white;
+  margin-right: 15px;
+  cursor: pointer;
+ }
+
+.size {
+  width: auto;
+  visibility: hidden;
+  height: 2.8rem;
+}
+
+img{
+  width: auto;
+  height: 1.7rem;
+}

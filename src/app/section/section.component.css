@@ -25,10 +25,9 @@
   .home-button {
     z-index: 1;
     position: relative;
-	text-transform: uppercase;
+	  text-transform: uppercase;
     width: auto;
     height: 49px;
-    text-transform: uppercase;
     letter-spacing: 2.5px;
     color: #000000;
     background-color: #ffffff;
@@ -125,7 +124,7 @@
  .content2 {
     max-width: 1024px;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 40px;
     margin: 0 auto;
     display: flex;
     justify-content: center;

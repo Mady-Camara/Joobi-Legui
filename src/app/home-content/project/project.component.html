@@ -1,44 +1,19 @@
-<div class="details">
+<div class="details" *ngFor="let project of projects">
     <div class="details__item">
         <div class="item__image">
-            <img class="catgor" src="../../assets/img/project-plan.png" alt="category">
+            <img class="catgor" src="{{project.link}}" alt="category">
         </div>
         <div class="item__details">
-            <div class="item__title">
-            Creation d'une application web
+            <div class="item__title">{{project.title}}
             </div>
             <div class="item__price">
-            300 000 FCFA / <span class="green">Ouvert</span>
+            {{project.price}} FCFA / <span [ngStyle]="{color: getColor(project.state)}">{{project.state}}</span>
             </div>
             <div class="item__description">
-                Super fast and power efficient A lot of fast memory High resolution camera 
-                Super fast and power efficient A lot of fast memory High resolution camera
+                {{getDescribe(project.description)}}
             </div>
             <div class="date">
-                Ajourd'hui à 12h:00
-            </div>
-        </div>
-    </div>
-</div>
-<div class="details">
-    <div class="details__item">
-        <div class="item__image">
-            <img class="catgor" src="../../assets/img/project-management.png" alt="category">
-        </div>
-        <div class="item__details">
-            <div class="item__title">
-            Creation d'une application mobile
-            </div>
-            <div class="item__price">
-            300 000 FCFA / <span class="red">Fermé</span>
-            </div>
-            <div class="item__description">
-                Super fast and power efficient A lot of fast memory High resolution camera 
-                Super fast and power efficient A lot of fast memory High resolution camera
-                Super fast and power efficient A lot of fast memory High resolution camera
-            </div>
-            <div class="date">
-                Ajourd'hui à 12h:00
+                {{project.date}} à {{project.time}}
             </div>
         </div>
     </div>

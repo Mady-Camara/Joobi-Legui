@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from '../modals/project';
 
 @Component({
   selector: 'app-home-content',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeContentComponent implements OnInit {
   category: string = "";
-  constructor() { }
+  projects: Project[] = [];
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

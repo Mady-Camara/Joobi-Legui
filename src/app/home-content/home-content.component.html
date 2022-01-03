@@ -1,15 +1,17 @@
 <div class="contents">
     <div class="cover">
             <label for="category">Recherchez par categorie </label>
-            <select name="category" id="category" class="category td">
-                <option value="tout">Toutes les categories</option>
-                <option value="Developpement web">Developpement web</option>
-                <option value="Developpement mobile">Developpement mobile</option>
-                <option value="Marketing">Marketing</option>
-            </select>
-            <button class="td" (click)="choiceCategory()">
-                <img src="../../assets/icons/search.png" class="search">
-            </button>
+            <div class="col2">
+                <select name="category" id="category" class="category td">
+                    <option value="tout">Toutes les categories</option>
+                    <option value="Developpement web">Developpement web</option>
+                    <option value="Developpement mobile">Developpement mobile</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+                <button class="td" (click)="choiceCategory()">
+                    <img src="../../assets/icons/search.png" class="search">
+                </button>
+            </div>
     </div>
     <div class="grid-container">
         <div class="gauche">
@@ -18,23 +20,11 @@
                 <li><a href="#"><img src="../../assets/img/project-management.png" class="category__icon" alt="dev"> Développement web</a></li>
                 <li><a href="#"><img src="../../assets/img/project-plan.png" class="category__icon" alt="dev"> Développement mobile</a></li>
                 <li><a href="#"><img src="../../assets/img/choices.png" class="category__icon" alt="dev"> Marketing</a></li>
-            </ul>
+            </ul> 
         </div>
         <div class="droite">
             <div class="titre">Tout les projets</div>
-            <!-- app projet-->
+            <app-project></app-project>
         </div>
     </div>
 </div>
-<!-- 
-    <section class="contents">
-    <div class="card">
-        <div class="category">
-            <img src="../../assets/icons/about.png" alt="">
-        </div>
-        <div class="title">
-            Title
-        </div>
-    </div>
-    </section>
--->
